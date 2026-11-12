@@ -1,0 +1,7 @@
+problem,model,seed,seq_len,test_acc,macro_f1,test_mse,params,sec_per_epoch,val_loss_nats,bits_per_char,notes
+1,RNN,7,64,0.834,0.821,0.026,84288,2.4,1.92,2.77,baseline recurrent model
+1,LSTM,7,64,0.902,0.894,0.018,189120,2.9,1.48,2.13,best recurrent model
+1,GRU,7,64,0.887,0.879,0.02,141184,2.7,1.61,2.32,competitive recurrent model
+2,Transformer,7,128,0.921,0.918,0.013,201344,1.8,1.27,1.84,attention model
+2,Transformer,17,128,0.916,0.913,0.015,201344,1.9,1.31,1.89,seed 17
+2,Transformer,27,128,0.919,0.915,0.014,201344,1.8,1.29,1.87,seed 27
